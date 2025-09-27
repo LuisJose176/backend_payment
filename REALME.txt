@@ -1,0 +1,40 @@
+# Tecnologías utilizadas #
+Python 
+Django 
+Django REST Framework
+SQL Server LocalDB (conexión mediante mssql-django)
+
+
+# Instalación de dependencias #
+pip install -r requirements.txt
+
+
+
+# Cómo correr el proyecto #
+python manage.py makemigrations
+python manage.py migrate
+
+Crear superusuario
+python manage.py createsuperuser
+
+
+# Correr el programa #
+python manage.py runserver
+
+
+# Urls para Probar las apis #
+
+# Listar transacciones #
+GET http://127.0.0.1:8000/api/transacciones/listar
+
+Crear transacción
+POST http://127.0.0.1:8000/api/transacciones/crear
+
+Detalle de transacción
+GET http://127.0.0.1:8000/api/transacciones/detalle/<id>
+
+Actualizar transacción (PUT/PATCH)
+PUT http://127.0.0.1:8000/api/transacciones/editar/<id>
+
+Eliminar transacción
+DELETE http://127.0.0.1:8000/api/transacciones/eliminar/<id>
