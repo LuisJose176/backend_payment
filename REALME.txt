@@ -38,3 +38,5 @@ PUT http://127.0.0.1:8000/api/transacciones/editar/<id>
 
 Eliminar transacción
 DELETE http://127.0.0.1:8000/api/transacciones/eliminar/<id>
+
+gracias 
